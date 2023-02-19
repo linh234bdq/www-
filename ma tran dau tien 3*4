@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a[3][4]; //khai bao mang 2 chieu [x:hang] [y:cot]
+for (int i=0;i<3;i++) //vong lap for de hien Nhap gia tri vao ma tran
+{
+	for (int j=0;j<4;j++)
+	{
+		printf("Nhap gia tri cho phan tu o hang %d,cot %d:",i,j);
+		scanf("%d", &a[i][j]);
+	}	
+}
+for (int i=0;i<3;i++) //vong lap for de in ra tung so ma minh nhap vao ma tran
+{
+	for (int j=0;j<4;j++)
+	{
+		printf("%d ", a[i][j]);
+	}
+	printf("\n"); //cho ma tran xuong mot khoang rieng
+}
+
+}
